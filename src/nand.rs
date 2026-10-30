@@ -28,7 +28,6 @@ impl NandComputer {
 
             self.pointer = (self.pointer + op.output_turn) % WHEEL_SIZE;
             self.memory_wheel[(self.pointer + 2) % WHEEL_SIZE] = output;
-            // println!("mem: {:?}", self.memory_wheel);
         }
     }
 }
